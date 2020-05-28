@@ -17,7 +17,7 @@ public struct LottieView: UIViewRepresentable {
     let bundle: Bundle
     let loopMode: LottieLoopMode
 
-    private init(filename: String, bundle: Bundle, loopMode: LottieLoopMode = .playOnce) {
+    public init(filename: String, bundle: Bundle, loopMode: LottieLoopMode = .playOnce) {
         self.filename = filename
         self.bundle = bundle
         self.loopMode = loopMode
