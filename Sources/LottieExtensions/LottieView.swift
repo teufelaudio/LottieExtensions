@@ -23,12 +23,6 @@ public struct LottieView: UIViewRepresentable {
         self.loopMode = loopMode
     }
 
-    public init(asset: Asset, loopMode: LottieLoopMode = .playOnce) {
-        self.init(filename: asset.filename,
-                  bundle: asset.bundle,
-                  loopMode: loopMode)
-    }
-
     public func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         let view = UIView()
         let animation = Animation.named(filename, bundle: bundle)
