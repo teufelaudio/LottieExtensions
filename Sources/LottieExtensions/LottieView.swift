@@ -25,6 +25,13 @@ public struct LottieView: UIViewRepresentable {
         self.completion = completion
     }
 
+    public init(asset: LottieAsset, loopMode: LottieLoopMode = .playOnce, completion: LottieCompletionBlock? = nil) {
+        self.filename = asset.filename
+        self.bundle = asset.bundle
+        self.loopMode = loopMode
+        self.completion = completion
+    }
+
     public func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         let view = UIView()
         let animation = Animation.named(filename, bundle: bundle)
