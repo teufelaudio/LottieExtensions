@@ -7,7 +7,7 @@ let package = Package(
     products: [.library(name: "LottieExtensions", targets: ["LottieExtensions"])],
     dependencies: [
         .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "3.1.2"),
-        .package(name: "UIExtensions", url: "https://github.com/teufelaudio/UIExtensions.git", .branch("master"))
+        .package(name: "UIExtensions", url: "https://github.com/teufelaudio/UIExtensions.git", .upToNextMajor(from: "0.1.0"))
     ],
     targets: [
         .target(name: "LottieExtensions", dependencies: ["Lottie", "UIExtensions"])
