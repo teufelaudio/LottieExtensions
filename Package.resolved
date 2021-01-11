@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/teufelaudio/FoundationExtensions.git",
         "state": {
           "branch": null,
-          "revision": "58347b6e8ad3fc5ef0d51dd0c4f0433f9c4f3cc5",
-          "version": "0.1.0"
+          "revision": "683b5fc1de91eee307fbc2c1b94b1cb149b45db9",
+          "version": "0.1.4"
         }
       },
       {
@@ -20,12 +20,30 @@
         }
       },
       {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "e03cda84105ba707de039b757e2b2de868c65a3e",
+          "version": "6.5.0"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "c8742ed97fc2f0c015a5ea5eddefb064cd7532d2",
+          "version": "6.0.0"
+        }
+      },
+      {
         "package": "SwiftRex",
         "repositoryURL": "https://github.com/SwiftRex/SwiftRex.git",
         "state": {
           "branch": null,
-          "revision": "b90766264edc92f60dc55b2a5e48d57efca6fbcb",
-          "version": "0.7.1"
+          "revision": "c42e1b97117e43a4ab39d3d83ae9a3a54ee860b6",
+          "version": "0.8.1"
         }
       },
       {
@@ -33,8 +51,8 @@
         "repositoryURL": "https://github.com/teufelaudio/UIExtensions.git",
         "state": {
           "branch": null,
-          "revision": "dcb9ffde2c5e4113abff45a5f06d9f533dcf38dc",
-          "version": "0.1.0"
+          "revision": "d4cde272b48585527b6eee0fe819ccd6cdd491a4",
+          "version": "0.1.10"
         }
       }
     ]
