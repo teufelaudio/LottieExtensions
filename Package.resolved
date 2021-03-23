@@ -15,35 +15,8 @@
         "repositoryURL": "https://github.com/airbnb/lottie-ios.git",
         "state": {
           "branch": null,
-          "revision": "4e5877425dae5c10792fc9d22d53dc6bf6824dc1",
-          "version": "3.1.8"
-        }
-      },
-      {
-        "package": "ReactiveSwift",
-        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "e03cda84105ba707de039b757e2b2de868c65a3e",
-          "version": "6.5.0"
-        }
-      },
-      {
-        "package": "RxSwift",
-        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "c8742ed97fc2f0c015a5ea5eddefb064cd7532d2",
-          "version": "6.0.0"
-        }
-      },
-      {
-        "package": "SwiftRex",
-        "repositoryURL": "https://github.com/SwiftRex/SwiftRex.git",
-        "state": {
-          "branch": null,
-          "revision": "c42e1b97117e43a4ab39d3d83ae9a3a54ee860b6",
-          "version": "0.8.1"
+          "revision": "b3c60ba1716baab6faeeb217d8ce1da336f92718",
+          "version": "3.2.1"
         }
       },
       {
@@ -51,8 +24,8 @@
         "repositoryURL": "https://github.com/teufelaudio/UIExtensions.git",
         "state": {
           "branch": null,
-          "revision": "d4cde272b48585527b6eee0fe819ccd6cdd491a4",
-          "version": "0.1.10"
+          "revision": "437f740555b83f2d6ce6359131cc7b232a220349",
+          "version": "0.2.0"
         }
       }
     ]
