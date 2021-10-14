@@ -10,7 +10,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "3.2.3"),
-        .package(name: "UIExtensions", url: "https://github.com/teufelaudio/UIExtensions.git", .upToNextMajor(from: "0.2.6"))
+        .package(name: "UIExtensions", url: "https://github.com/teufelaudio/UIExtensions.git", .upToNextMajor(from: "0.2.10"))
     ],
     targets: [
         .target(name: "LottieExtensions", dependencies: ["Lottie", "UIExtensions"]),
