@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "LottieExtensions",
-    platforms: [.iOS(.v13)],
+    platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6)],
     products: [
         .library(name: "LottieExtensions", targets: ["LottieExtensions"]),
         .library(name: "LottieExtensionsAllStatic", targets: ["LottieExtensionsAllStatic"]),
