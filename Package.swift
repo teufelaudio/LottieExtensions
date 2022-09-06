@@ -6,14 +6,12 @@ let package = Package(
     platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6)],
     products: [
         .library(name: "LottieExtensions", targets: ["LottieExtensions"]),
-        .library(name: "LottieExtensionsAllStatic", targets: ["LottieExtensionsAllStatic"]),
     ],
     dependencies: [
         .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "3.2.3"),
-        .package(name: "UIExtensions", url: "https://github.com/teufelaudio/UIExtensions.git", .upToNextMajor(from: "0.2.10"))
+        .package(name: "UIExtensions", url: "https://github.com/teufelaudio/UIExtensions.git", from: "0.2.16")
     ],
     targets: [
         .target(name: "LottieExtensions", dependencies: ["Lottie", "UIExtensions"]),
-        .target(name: "LottieExtensionsAllStatic", dependencies: ["Lottie", .product(name: "UIExtensionsAllStatic", package: "UIExtensions")])
     ]
 )
