@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/teufelaudio/FoundationExtensions.git",
         "state": {
           "branch": null,
-          "revision": "aef679bde907365943fcc8bb5ba7a03e09ec48e3",
-          "version": "0.1.12"
+          "revision": "79ebeb6b47b41f3423ac995638eba5788b373b5d",
+          "version": "0.1.17"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/teufelaudio/UIExtensions.git",
         "state": {
           "branch": null,
-          "revision": "e4abf4967db831fe9055181ad2de5a27c51b40da",
-          "version": "0.2.10"
+          "revision": "f08014d738c4a7807ca55e52cbf96068d83d2b7d",
+          "version": "0.2.16"
         }
       }
     ]
