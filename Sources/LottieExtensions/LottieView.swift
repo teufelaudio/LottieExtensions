@@ -17,6 +17,7 @@ public struct LottieView: UIViewRepresentable {
     let bundle: Bundle
     let loopMode: LottieLoopMode
     let completion: LottieCompletionBlock?
+    @Environment(\.lottieAnimationProgress) var lottieAnimationProgress
 
     public init(filename: String, bundle: Bundle, loopMode: LottieLoopMode = .playOnce, completion: LottieCompletionBlock? = nil) {
         self.filename = filename
@@ -33,7 +34,7 @@ public struct LottieView: UIViewRepresentable {
         animationView.contentMode = .scaleAspectFit
         animationView.backgroundBehavior = .pauseAndRestore
         if context.environment.disableAnimations {
-            animationView.currentProgress = 0.5
+            animationView.currentProgress = lottieAnimationProgress
         } else {
             animationView.play(completion: completion)
         }
