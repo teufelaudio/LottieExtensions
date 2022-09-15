@@ -3,7 +3,7 @@
 import SwiftUI
 
 extension EnvironmentValues {
-    var lottieAnimationProgress: CGFloat {
+    public var lottieAnimationProgress: CGFloat {
         get { return self[LottieAnimationProgressEnvironmentKey.self] }
         set { self[LottieAnimationProgressEnvironmentKey.self] = newValue }
     }
