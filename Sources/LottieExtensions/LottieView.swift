@@ -4,9 +4,7 @@ import Lottie
 import SwiftUI
 import struct UIExtensions.DisableAnimationsEnvironmentKey
 
-
-
-/// `LottieView` is a struct that adapts `LottieAnimationView` to `UIViewRepresentable` protocol.
+/// `LottieView` is a struct that adapts `LottieView.Configuration` to `UIViewRepresentable` protocol.
 /// It enables using Lottie animations in SwiftUI.
 public struct LottieView: UIViewRepresentable {
     public typealias Configuration = LottieAnimationView
@@ -16,18 +14,18 @@ public struct LottieView: UIViewRepresentable {
     private let deprecatedCompletion: LottieCompletionBlock?
     private let runDeprecatedLogic: ((UIView, Context) -> Void)?
 
-    /// Initializes a new `LottieView` with a closure that creates an instance of `LottieAnimationView`.
+    /// Initializes a new `LottieView` with a closure that creates an instance of `LottieView.Configuration`.
     ///
-    /// - Parameter animationView: A closure that creates a `LottieAnimationView` instance.
+    /// - Parameter configuration: A closure that creates a `LottieView.Configuration` instance.
     ///
     /// Example:
     /// ```swift
-    /// LottieView(Configuration(name: animationFile.name, bundle: animationFile.bundle))
+    /// LottieView(.init(name: animationFile.name, bundle: animationFile.bundle))
     /// ```
     public init(
-        _ animationView: @escaping @autoclosure () -> Configuration
+        _ configuration: @escaping @autoclosure () -> Configuration
     ) {
-        self.makeAnimationView = animationView
+        self.makeAnimationView = configuration
         self.deprecatedCompletion = nil
         self.runDeprecatedLogic = nil
     }
@@ -57,13 +55,7 @@ public struct LottieView: UIViewRepresentable {
 extension LottieView {
     static private func animationView(_ wrapperView: UIView) -> LottieAnimationView {
         guard let animationView = wrapperView.subviews.first as? LottieAnimationView
-        else {
-            preconditionFailure(
-                """
-                Wrapper view should be initilized before this method called.
-                """
-            )
-        }
+        else { preconditionFailure("Wrapper view should be initilized before this method called.") }
         return animationView
     }
 }
