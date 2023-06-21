@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/teufelaudio/FoundationExtensions.git",
         "state": {
           "branch": null,
-          "revision": "def4b8d69600a909879cad4d851bc20b962440e7",
-          "version": "0.1.19"
+          "revision": "6b9bd39109a1634112c325aa2e4a6a63d58a6254",
+          "version": "0.5.1"
         }
       },
       {
@@ -15,8 +15,44 @@
         "repositoryURL": "https://github.com/airbnb/lottie-ios.git",
         "state": {
           "branch": null,
-          "revision": "79a0b70547f7c40ea54c67487f935fa2f2eaaadc",
-          "version": "3.2.3"
+          "revision": "d6feea26a370019b4d3a85f5984cb95a2734776f",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "swift-case-paths",
+        "repositoryURL": "https://github.com/pointfreeco/swift-case-paths",
+        "state": {
+          "branch": null,
+          "revision": "fc45e7b2cfece9dd80b5a45e6469ffe67fe67984",
+          "version": "0.14.1"
+        }
+      },
+      {
+        "package": "swift-custom-dump",
+        "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
+        "state": {
+          "branch": null,
+          "revision": "505aa98716275fbd045d8f934fee3337c82ffbd3",
+          "version": "0.10.3"
+        }
+      },
+      {
+        "package": "swift-snapshot-testing",
+        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
+        "state": {
+          "branch": null,
+          "revision": "cef5b3f6f11781dd4591bdd1dd0a3d22bd609334",
+          "version": "1.11.0"
+        }
+      },
+      {
+        "package": "swiftui-navigation",
+        "repositoryURL": "https://github.com/pointfreeco/swiftui-navigation.git",
+        "state": {
+          "branch": null,
+          "revision": "db81007362f998654239021ca9308a264e59d3e2",
+          "version": "0.7.2"
         }
       },
       {
@@ -24,8 +60,17 @@
         "repositoryURL": "https://github.com/teufelaudio/UIExtensions.git",
         "state": {
           "branch": null,
-          "revision": "3b8e112b263c272901a1eb29eeb85d8822cf68aa",
-          "version": "0.2.20"
+          "revision": "b3eb10854edf5922203b402f5c5684dddbff71b5",
+          "version": "0.7.0"
+        }
+      },
+      {
+        "package": "xctest-dynamic-overlay",
+        "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
+        "state": {
+          "branch": null,
+          "revision": "4af50b38daf0037cfbab15514a241224c3f62f98",
+          "version": "0.8.5"
         }
       }
     ]
