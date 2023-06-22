@@ -10,10 +10,6 @@ public struct LottieView: UIViewRepresentable {
     public typealias Configuration = LottieAnimationView
     private let makeAnimationView: () -> LottieAnimationView
 
-    // Deprecated
-    private let deprecatedCompletion: LottieCompletionBlock?
-    private let runDeprecatedLogic: ((UIView, Context) -> Void)?
-
     /// Initializes a new `LottieView` with a closure that creates an instance of `LottieView.Configuration`.
     ///
     /// - Parameter configuration: A closure that creates a `LottieView.Configuration` instance.
@@ -26,8 +22,6 @@ public struct LottieView: UIViewRepresentable {
         _ configuration: @escaping @autoclosure () -> Configuration
     ) {
         self.makeAnimationView = configuration
-        self.deprecatedCompletion = nil
-        self.runDeprecatedLogic = nil
     }
 
     public func makeUIView(context: Context) -> UIView {
@@ -41,13 +35,15 @@ public struct LottieView: UIViewRepresentable {
             animationView.widthAnchor.constraint(equalTo: wrapperView.widthAnchor)
         ])
 
-        runDeprecatedLogic?(wrapperView, context)
         return wrapperView
     }
 
     public func updateUIView(_ uiView: LottieView.UIViewType, context: Context) {
-        context.environment.lottieAnimationConfiguration(Self.animationView(uiView))
-        runDeprecatedLogic?(uiView, context)
+            context.environment.lottieAnimationConfiguration(Self.animationView(uiView))
+            if context.environment.disableAnimations {
+                Self.animationView(uiView).pause()
+                Self.animationView(uiView).currentProgress = context.environment.lottieAnimationDisabledProgress
+            }
     }
 }
 
@@ -77,48 +73,16 @@ extension EnvironmentValues {
     }
 }
 
-// MARK: LottieAnimationProgress: Deprecated
-extension EnvironmentValues {
-    /// Deprecated
-    /// The progress of the Lottie animation.
-    @available(*, deprecated, message: "This property is deprecated. Please use `lottieAnimationConfiguration` to configure and control Lottie animations.")
-    public var lottieAnimationProgress: CGFloat {
-        get { return self[LottieAnimationProgressEnvironmentKey.self] }
-        set { self[LottieAnimationProgressEnvironmentKey.self] = newValue }
-    }
-}
-
-public struct LottieAnimationProgressEnvironmentKey: EnvironmentKey {
+// MARK: LottieAnimationDisabledProgress
+public struct LottieAnimationDisabledProgressKey: EnvironmentKey {
     public static let defaultValue: CGFloat = 0.5
 }
 
-// MARK: - Deprecated
-extension LottieView {
-    /// Deprecated initializer
-    /// - Parameters:
-    ///   - filename: Name of the Lottie animation file.
-    ///   - bundle: Bundle containing the Lottie animation file.
-    ///   - loopMode: Animation loop mode. Defaults to `.playOnce`.
-    ///   - completion: Completion block to be executed when animation finishes. Defaults to `nil`.
-    /// - Returns: An instance of `LottieView`.
-    @available(*, deprecated, message: "This initializer is deprecated. Please use `init(_ animationView: LottieAnimationView)` instead.")
-    @_disfavoredOverload
-    public init(
-        filename: String,
-        bundle: Bundle,
-        loopMode: LottieLoopMode = .playOnce,
-        completion: LottieCompletionBlock? = nil
-    ) {
-        let animationView = LottieAnimationView(name: filename, bundle: bundle)
-        animationView.loopMode = loopMode
-        self.makeAnimationView = { animationView }
-        self.deprecatedCompletion = completion
-        self.runDeprecatedLogic = { view, context in
-            if context.environment.disableAnimations {
-                LottieView.animationView(view).currentProgress = context.environment.lottieAnimationProgress
-            } else {
-                LottieView.animationView(view).play(completion: completion)
-            }
-        }
+extension EnvironmentValues {
+    public var lottieAnimationDisabledProgress: CGFloat {
+        get { return self[LottieAnimationDisabledProgressKey.self] }
+        set { self[LottieAnimationDisabledProgressKey.self] = newValue }
     }
 }
+
+
