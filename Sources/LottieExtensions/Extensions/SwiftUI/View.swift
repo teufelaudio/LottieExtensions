@@ -28,4 +28,22 @@ extension View {
     ) -> some View {
         environment(\.lottieAnimationConfiguration, lottieConfigurationClosure)
     }
+
+    /// Use this method to specify the desired progress of a Lottie animation when animations are disabled in the environment. This value has no effect if animations are not disabled.
+    ///
+    /// - Parameter progress: The desired progress of the animation when animations are disabled. This is a value between `0.0` (the start of the animation) and `1.0` (the end of the animation).
+    /// - Returns: A view that has its Lottie animation's disabled progress modified by the specified amount.
+    ///
+    /// The following example shows how to set the Lottie animation's disabled progress to 50% (0.5):
+    ///
+    ///     LottieView(animation)
+    ///         .lottieAnimationDisabledProgress(0.5)
+    ///
+    @ViewBuilder
+    @inlinable
+    public func lottieAnimationDisabledProgress(
+        _ progress: CGFloat
+    ) -> some View {
+        environment(\.lottieAnimationDisabledProgress, progress)
+    }
 }
