@@ -20,24 +20,6 @@
         }
       },
       {
-        "package": "swift-case-paths",
-        "repositoryURL": "https://github.com/pointfreeco/swift-case-paths",
-        "state": {
-          "branch": null,
-          "revision": "fc45e7b2cfece9dd80b5a45e6469ffe67fe67984",
-          "version": "0.14.1"
-        }
-      },
-      {
-        "package": "swift-custom-dump",
-        "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
-        "state": {
-          "branch": null,
-          "revision": "505aa98716275fbd045d8f934fee3337c82ffbd3",
-          "version": "0.10.3"
-        }
-      },
-      {
         "package": "swift-snapshot-testing",
         "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
         "state": {
@@ -47,30 +29,12 @@
         }
       },
       {
-        "package": "swiftui-navigation",
-        "repositoryURL": "https://github.com/pointfreeco/swiftui-navigation.git",
-        "state": {
-          "branch": null,
-          "revision": "db81007362f998654239021ca9308a264e59d3e2",
-          "version": "0.7.2"
-        }
-      },
-      {
         "package": "UIExtensions",
         "repositoryURL": "https://github.com/teufelaudio/UIExtensions.git",
         "state": {
           "branch": null,
-          "revision": "b3eb10854edf5922203b402f5c5684dddbff71b5",
-          "version": "0.7.0"
-        }
-      },
-      {
-        "package": "xctest-dynamic-overlay",
-        "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
-        "state": {
-          "branch": null,
-          "revision": "4af50b38daf0037cfbab15514a241224c3f62f98",
-          "version": "0.8.5"
+          "revision": "7746162ac3ad18646fc12ec6a7d0aca965ed7f04",
+          "version": "1.0.0"
         }
       }
     ]
