@@ -8,8 +8,8 @@ let package = Package(
         .library(name: "LottieExtensions", targets: ["LottieExtensions"]),
     ],
     dependencies: [
-        .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "4.2.0"),
-        .package(name: "UIExtensions", url: "https://github.com/teufelaudio/UIExtensions.git", from: "1.0.0")
+        .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "4.4.0"),
+        .package(name: "UIExtensions", url: "https://github.com/teufelaudio/UIExtensions.git", from: "1.1.1")
     ],
     targets: [
         .target(name: "LottieExtensions", dependencies: ["Lottie", "UIExtensions"]),
