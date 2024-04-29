@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/airbnb/lottie-ios.git",
         "state": {
           "branch": null,
-          "revision": "f522990668c2f9132323a2e68d924c7dcb9130b4",
-          "version": "4.4.0"
+          "revision": "769b88d83a42ca8d5572b020c96f47e3690b3796",
+          "version": "4.4.3"
         }
       },
       {
@@ -24,17 +24,17 @@
         "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
         "state": {
           "branch": null,
-          "revision": "8e68404f641300bfd0e37d478683bb275926760c",
-          "version": "1.15.2"
+          "revision": "625ccca8570773dd84a34ee51a81aa2bc5a4f97a",
+          "version": "1.16.0"
         }
       },
       {
         "package": "swift-syntax",
-        "repositoryURL": "https://github.com/apple/swift-syntax.git",
+        "repositoryURL": "https://github.com/apple/swift-syntax",
         "state": {
           "branch": null,
-          "revision": "64889f0c732f210a935a0ad7cda38f77f876262d",
-          "version": "509.1.1"
+          "revision": "fa8f95c2d536d6620cc2f504ebe8a6167c9fc2dd",
+          "version": "510.0.1"
         }
       },
       {
@@ -43,7 +43,7 @@
         "state": {
           "branch": null,
           "revision": "2d16f0db9b3629b670dad9e32d5fe54fef885d05",
-          "version": "1.2.0"
+          "version": "1.2.2"
         }
       }
     ]
