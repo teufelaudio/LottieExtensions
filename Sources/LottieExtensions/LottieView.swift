@@ -58,8 +58,9 @@ extension LottieView {
 
 // MARK: - Configurations
 // MARK: LottieAnimationConfiguration
-public struct LottieAnimationConfigurationKey: EnvironmentKey {
-    public static var defaultValue: (LottieAnimationView) -> Void = {
+@MainActor
+public struct LottieAnimationConfigurationKey: @preconcurrency EnvironmentKey {
+    public static let defaultValue: (LottieAnimationView) -> Void = {
         $0.loopMode = .playOnce
         $0.contentMode = .scaleAspectFit
         $0.backgroundBehavior = .pauseAndRestore

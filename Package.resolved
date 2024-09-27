@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/teufelaudio/FoundationExtensions.git",
         "state": {
           "branch": null,
-          "revision": "c441f8fa10ee6c93ce4d4d3939a8bd683987e48f",
-          "version": "0.6.2"
+          "revision": "f664fd15bf661193b2595bdcf8d7fc6eadb94fe2",
+          "version": "1.0.0"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/airbnb/lottie-ios.git",
         "state": {
           "branch": null,
-          "revision": "769b88d83a42ca8d5572b020c96f47e3690b3796",
-          "version": "4.4.3"
+          "revision": "fe4c6fe3a0aa66cdeb51d549623c82ca9704b9a5",
+          "version": "4.5.0"
         }
       },
       {
@@ -24,17 +24,17 @@
         "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
         "state": {
           "branch": null,
-          "revision": "625ccca8570773dd84a34ee51a81aa2bc5a4f97a",
-          "version": "1.16.0"
+          "revision": "7b0bbbae90c41f848f90ac7b4df6c4f50068256d",
+          "version": "1.17.5"
         }
       },
       {
         "package": "swift-syntax",
-        "repositoryURL": "https://github.com/apple/swift-syntax",
+        "repositoryURL": "https://github.com/swiftlang/swift-syntax",
         "state": {
           "branch": null,
-          "revision": "fa8f95c2d536d6620cc2f504ebe8a6167c9fc2dd",
-          "version": "510.0.1"
+          "revision": "0687f71944021d616d34d922343dcef086855920",
+          "version": "600.0.1"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/teufelaudio/UIExtensions.git",
         "state": {
           "branch": null,
-          "revision": "2d16f0db9b3629b670dad9e32d5fe54fef885d05",
-          "version": "1.2.2"
+          "revision": "9126dcbd0bde4d83c5dcf73920e82d6ce313bf0a",
+          "version": "2.0.0"
         }
       }
     ]
