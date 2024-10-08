@@ -1,52 +1,51 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "FoundationExtensions",
-        "repositoryURL": "https://github.com/teufelaudio/FoundationExtensions.git",
-        "state": {
-          "branch": null,
-          "revision": "f664fd15bf661193b2595bdcf8d7fc6eadb94fe2",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "Lottie",
-        "repositoryURL": "https://github.com/airbnb/lottie-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "fe4c6fe3a0aa66cdeb51d549623c82ca9704b9a5",
-          "version": "4.5.0"
-        }
-      },
-      {
-        "package": "swift-snapshot-testing",
-        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
-        "state": {
-          "branch": null,
-          "revision": "7b0bbbae90c41f848f90ac7b4df6c4f50068256d",
-          "version": "1.17.5"
-        }
-      },
-      {
-        "package": "swift-syntax",
-        "repositoryURL": "https://github.com/swiftlang/swift-syntax",
-        "state": {
-          "branch": null,
-          "revision": "0687f71944021d616d34d922343dcef086855920",
-          "version": "600.0.1"
-        }
-      },
-      {
-        "package": "UIExtensions",
-        "repositoryURL": "https://github.com/teufelaudio/UIExtensions.git",
-        "state": {
-          "branch": null,
-          "revision": "9126dcbd0bde4d83c5dcf73920e82d6ce313bf0a",
-          "version": "2.0.0"
-        }
+  "originHash" : "40b1a0809dfb920ed79326e79a4ddd4553d8c0bd004608189c60b7f12ca639ac",
+  "pins" : [
+    {
+      "identity" : "foundationextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/teufelaudio/FoundationExtensions.git",
+      "state" : {
+        "revision" : "f664fd15bf661193b2595bdcf8d7fc6eadb94fe2",
+        "version" : "1.0.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "revision" : "fe4c6fe3a0aa66cdeb51d549623c82ca9704b9a5",
+        "version" : "4.5.0"
+      }
+    },
+    {
+      "identity" : "swift-snapshot-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-snapshot-testing.git",
+      "state" : {
+        "revision" : "7b0bbbae90c41f848f90ac7b4df6c4f50068256d",
+        "version" : "1.17.5"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax",
+      "state" : {
+        "revision" : "0687f71944021d616d34d922343dcef086855920",
+        "version" : "600.0.1"
+      }
+    },
+    {
+      "identity" : "uiextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/teufelaudio/UIExtensions.git",
+      "state" : {
+        "revision" : "682261b63b001c4c3f4b1e0bf26e5d81a1993eb1",
+        "version" : "2.1.0"
+      }
+    }
+  ],
+  "version" : 3
 }
