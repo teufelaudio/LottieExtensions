@@ -1,5 +1,5 @@
 {
-  "originHash" : "40b1a0809dfb920ed79326e79a4ddd4553d8c0bd004608189c60b7f12ca639ac",
+  "originHash" : "7df108a09aff08af1bedd249c6455d7dd49b1f355407080ab482335d0be794e8",
   "pins" : [
     {
       "identity" : "foundationextensions",
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/teufelaudio/UIExtensions.git",
       "state" : {
-        "revision" : "682261b63b001c4c3f4b1e0bf26e5d81a1993eb1",
-        "version" : "2.1.0"
+        "revision" : "0647165d1a7803786ce509afaabfd95b375d1477",
+        "version" : "3.0.0"
       }
     }
   ],
