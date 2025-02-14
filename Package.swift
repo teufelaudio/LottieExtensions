@@ -9,7 +9,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.4.0"),
-        .package(url: "https://github.com/teufelaudio/UIExtensions.git", from: "4.0.0")
+        .package(url: "https://github.com/teufelaudio/UIExtensions.git", from: "4.0.3")
     ],
     targets: [
         .target(
