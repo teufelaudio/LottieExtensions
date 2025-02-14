@@ -88,3 +88,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Ingoring package resolved as it it's dependencies are tracked in used repositories. 
+Package.resolved
