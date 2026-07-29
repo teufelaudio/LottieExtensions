@@ -1,13 +1,13 @@
 {
-  "originHash" : "4327c24133e345922a906a8d6c9dbc4d4645e8b8cb64938c77cc137439edfbde",
+  "originHash" : "8346a177a310e2ae858d2489a2fb0c17106b3b63f2db45d5dbb060eef74e39e8",
   "pins" : [
     {
       "identity" : "foundationextensions",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/teufelaudio/FoundationExtensions.git",
       "state" : {
-        "revision" : "a14cd7aa848c831661a8cc18b1c9d0b2551e7aba",
-        "version" : "2.0.8"
+        "revision" : "9759b89fec54726d37255b579739f1c75910cd8d",
+        "version" : "3.0.0"
       }
     },
     {
@@ -51,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/teufelaudio/UIExtensions.git",
       "state" : {
-        "revision" : "f2acea6a270eecde00e5432d33a1457ef29f8494",
-        "version" : "6.0.0"
+        "revision" : "8d0bba3036515b8f6c3704ec9f637cf23bd4e2e6",
+        "version" : "7.0.0"
       }
     },
     {
